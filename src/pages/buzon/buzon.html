@@ -1,0 +1,37 @@
+<!--
+  Generated template for the BuzonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='azulUG' text-center>
+    <img src="../../assets/imgs/logoUG.png" width="25%" height="25%" />
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+      <ion-card-header text-center>
+          <img src="../../assets/imgs/logoUG.png" />
+      </ion-card-header>
+      <ion-card-content text-justify>
+          <p>El buzón UG, es un medio a través del cual se da atención a quejas, comentarios, sugerencias o felicitaciones sobre los procesos, trámites y servicios que presta la Universidad, cada mensaje tiene un plazo de 3 días hábiles para ser atendido.</p>
+          <br /><br />
+          <div text-right>
+              <p>Secretaría de Gestión y Desarrollo</p>
+              <p>Departamento de Gestión de Calidad Administrativa</p>
+              <p>Correo: <a href="mailto:buzon@ugto.mx">buzon@ugto.mx</a></p>
+              <p>Teléfono: 01 473 732 00 06 Ext. 3057</p>
+          </div>
+      </ion-card-content>
+    </ion-card>
+
+    <button ion-button icon-left large color="oroUG" full (click)="nuevoMensajeClicked()" style=" position: absolute; bottom: 0; margin: 0;"> 
+      <ion-icon name="md-mail"></ion-icon> 
+      Mensaje Nuevo
+    </button>
+</ion-content>

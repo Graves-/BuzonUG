@@ -1,0 +1,47 @@
+page-nuevo-mensaje {
+    
+    /*
+    .select-text {
+        display: none !important;
+    }
+    */
+    
+    #itemTipoMsg, #itemRelacion {
+        border-radius: 5px;
+        border: 2px solid color($colors, azulUG);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    ion-input, ion-textarea {
+        border-bottom: 1px solid black;
+    }
+
+    .input-has-focus, .item-input-has-focus {
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .list-md .item-input-has-focus:last-child, .list-md.item-input-has-focus:last-child{
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .list-md .item-input:last-child{
+        border-bottom: none !important;
+    }
+
+    ion-list{
+        border: 2px solid color($colors, azulUG);
+        padding: 5px;
+        border-radius: 5px;
+        padding-bottom: 25px;
+    }
+
+    /*
+    #input-nombre {
+        padding: 5px 5px 10px 5px;
+        border: 1px solid black;
+    }
+    */
+}

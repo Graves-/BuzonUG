@@ -1,0 +1,53 @@
+<!--
+  Generated template for the MandarMensajePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='azulUG' text-center>
+    <img src="../../assets/imgs/logoUG.png" width="25%" height="25%" />
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-content padding>
+        <ion-list no-lines>
+            <ion-item id="itemMsg">
+                <ion-label stacked>Mensaje</ion-label>
+                <ion-textarea type="text" [(ngModel)]="mensaje" placeholder="Ingresa tu mensaje aquí."></ion-textarea>
+              </ion-item>
+        
+              <ion-item>
+                <p text-wrap text-justify id=txtManif>Manifiesto mi consentimiento para el tratamiento de los datos personales recabados en el presente formato, los cuales serán protegidos, incorporados y tratados en la base del Buzón de quejas, sugerencias, comentarios y felicitaciones de la Universidad de Guanajuato, con fundamento en el Aviso de Privacidad Integral.</p>
+              </ion-item>
+
+              <ion-list no-lines radio-group [(ngModel)]="acepto">
+                <ion-item>
+                  <ion-label>Acepto</ion-label>
+                  <ion-radio value="SI"></ion-radio>
+                </ion-item>
+  
+                <ion-item>
+                  <ion-label>No Acepto</ion-label>
+                  <ion-radio value="NO"></ion-radio>
+                </ion-item>
+              </ion-list>
+              
+              <ion-item>
+                  <button ion-button full (click)="openAviso()" round>
+                    Descargar Aviso de Privacidad
+                  </button>
+              </ion-item>
+        </ion-list>
+    </ion-content>
+
+    <button ion-button full large color="oroUG" icon-left style=" position: absolute; bottom: 0; margin: 0;" (click)="mandarMensaje()">
+      <ion-icon name="send"></ion-icon> 
+      Mandar Mensaje
+    </button>
+
+</ion-content>

@@ -1,0 +1,57 @@
+page-opciones-extra {
+    ion-input {
+        border-bottom: 2px solid color($colors, azulUG);
+    }
+
+    #content-extras{
+        border-radius: 5px;
+        border: 2px solid color($colors, azulUG);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 15px;
+    }
+
+    .select-text {
+        display: none !important;
+    }
+
+    .badge-camp-div{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }  
+
+    #itemCampus, #itemDiv {
+        border-radius: 5px;
+        border: 2px solid color($colors, azulUG);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .input-has-focus, .item-input-has-focus {
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .list-md .item-input-has-focus:last-child, .list-md.item-input-has-focus:last-child{
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .list-md .item-input:last-child{
+        border-bottom: none !important;
+    }
+
+    .list-md .item-input-has-focus, .list-md.item-input-has-focus{
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .list-md .item-input{
+        border-bottom: none !important;
+    }
+
+    .list-md .item-block .item-inner {
+        border-bottom: none !important;
+    }
+}

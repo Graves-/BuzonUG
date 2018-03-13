@@ -1,0 +1,15 @@
+page-mandar-mensaje {
+    ion-input, ion-textarea {
+        border-bottom: 2px solid color($colors, azulUG);
+    }
+
+    #itemMsg{
+        padding-bottom: 15px;
+        border: 2px solid color($colors, azulUG);
+        border-radius: 5px;
+    }
+
+    #txtManif{
+        font-size: 8pt;
+    }
+}

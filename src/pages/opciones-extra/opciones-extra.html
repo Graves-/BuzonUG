@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar color="azulUG" text-center>
+    <img src="../../assets/imgs/logoUG.png" width="25%" height="25%" />
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-content padding>
+      <ion-list no-lines>
+          <div id="content-extras">
+            <ion-item *ngIf="idRelacion === 9 || idRelacion === 12">
+              <ion-label stacked>NUA</ion-label>
+              <ion-input type="text" [(ngModel)]="nua" placeholder="Ingresa tu NUA."></ion-input>
+            </ion-item>
+  
+            <ion-item *ngIf="idRelacion === 10 || idRelacion === 11">
+              <ion-label stacked>Número de Empleado</ion-label>
+              <ion-input type="text" [(ngModel)]="nue" placeholder="Ingresa tu número de empleado."></ion-input>
+            </ion-item>
+          </div>
+
+          <ion-item id="itemCampus">
+            <ion-label>Campus</ion-label>
+            <ion-select interface="action-sheet" [(ngModel)]="idCampusSelected" (ionChange)="campusChanged()">
+              <ion-option *ngFor="let campus of arrCampus" [value]="campus.id">{{campus.nombre}}</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item id="itemDiv" *ngIf="idCampusSelected !== 0">
+            <ion-label>División</ion-label>
+            <ion-select interface="action-sheet" [(ngModel)]="idDivSelected" (ionChange)="divChanged()">
+              <ion-option *ngFor="let div of arrDiv" [value]="div.id">{{div.nombre}}</ion-option>
+            </ion-select>
+          </ion-item>
+      
+          <ion-item text-center>
+            <ion-badge class="badge-camp-div" color='oroUG' text-wrap>{{nombreCampusSelected}}</ion-badge>
+            <br />
+            <ion-badge class="badge-camp-div" color='oroUG' text-wrap>{{nombreDivSelected}}</ion-badge>
+          </ion-item>
+      </ion-list> 
+  </ion-content> 
+
+  <button ion-button icon-right large color="oroUG" full  style=" position: absolute; bottom: 0; margin: 0;" (click)="siguienteClicked()"> 
+    Siguiente
+    <ion-icon name="arrow-forward"></ion-icon>
+  </button>
+
+</ion-content>
